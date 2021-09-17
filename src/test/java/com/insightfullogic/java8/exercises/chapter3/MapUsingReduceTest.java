@@ -1,27 +1,31 @@
 package com.insightfullogic.java8.exercises.chapter3;
 
-import org.junit.Test;
+import static java.util.Arrays.asList;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Function;
 
-import static java.util.Arrays.asList;
-import static org.junit.Assert.assertEquals;
+import org.junit.Ignore;
+import org.junit.Test;
 
 public class MapUsingReduceTest {
 
     @Test
+    @Ignore
     public void emptyList() {
         assertMapped(Function.<Object>identity(), Collections.<Object>emptyList(), Collections.<Object>emptyList());
     }
 
     @Test
+    @Ignore
     public void identityMapsToItself() {
         assertMapped((Integer x) -> x, asList(1, 2, 3), asList(1, 2, 3));
     }
 
     @Test
+    @Ignore
     public void incrementingNumbers() {
         assertMapped((Integer x) -> x + 2, asList(1, 2, 3), asList(3, 4, 5));
     }

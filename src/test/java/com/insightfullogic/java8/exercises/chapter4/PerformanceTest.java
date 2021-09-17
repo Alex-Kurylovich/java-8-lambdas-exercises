@@ -2,6 +2,8 @@ package com.insightfullogic.java8.exercises.chapter4;
 
 import com.insightfullogic.java8.examples.chapter1.Artist;
 import com.insightfullogic.java8.examples.chapter1.SampleData;
+
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.List;
@@ -15,6 +17,7 @@ import static org.junit.Assert.assertThat;
 public class PerformanceTest {
 
     @Test
+    @Ignore
     public void findsAllTheBeatles() {
         PerformanceFixed stub = new PerformanceFixed() {
             @Override

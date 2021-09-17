@@ -1,14 +1,16 @@
 package com.insightfullogic.java8.exercises.chapter2;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 import java.util.Calendar;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.Ignore;
+import org.junit.Test;
 
 public class Question2Test {
 
     @Test
+    @Ignore
     public void exampleInB() {
         Calendar cal = Calendar.getInstance();
         cal.set(Calendar.YEAR, 1970);
